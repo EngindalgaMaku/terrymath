@@ -1,0 +1,221 @@
+*,*::before, *::after{
+    box-sizing: border-box ;
+}
+
+:root{
+    --body:turquoise;
+    --bar:rgb(0, 136, 255);
+    --beyaz:white;
+    --yeşil:#15ff00;
+    --kırmızı:#ff0000;
+    --yazılar:rgb(0, 0, 0);
+    --turuncu:orange;
+    --parlakkırmızı:#ff0101;
+    --parlakyeşil:#41ff01;
+}
+.darkmode{
+    --body:rgb(26, 86, 80);
+    --bar:rgb(0, 64, 120);
+    --beyaz:rgb(35, 35, 35);
+    --yazılar:white;
+    --yeşil:#0b8100;
+    --kırmızı:#7f0000;
+    --turuncu:rgb(108, 70, 0);
+    --parlakkırmızı:#ff0101;
+    --parlakyeşil:#41ff01;
+}
+.yanlış{
+    --yazılar:rgb(255, 0, 0);
+}
+h1{color: var(--yazılar);}
+h2{color: var(--yazılar);}
+h3{color: var(--yazılar);}
+h4{color: var(--yazılar);}
+label{color: var(--yazılar);}
+p{color: var(--yazılar);}
+body{
+    margin: 0;
+    padding:0;
+    background-color: var(--body);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.zaman{
+    position:relative;
+    width: 500px;
+    height: 3em ;
+    background-color:var(--turuncu);
+    border-radius: 1.5em;
+    color:var(--beyaz);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zaman::before{
+    content: attr(data-label);
+    position:absolute;
+    left: .5em;
+    right: .5em;
+    top: .5em;
+    bottom: .5em;
+    width: calc(var(--width , 0) * 1%);
+    min-width: 2rem;
+    max-width: 97% ;
+    background-color: var(--bar);
+    border-radius: 1.5em;
+}
+
+.başlık{
+    text-align: center;
+    background-color: var(--beyaz);
+    margin: 1em;
+    border-radius: 1.5em;
+    height: 2em;
+}
+
+.gösterge{
+    display: flex;
+    gap:1em;
+    justify-content: center;
+    background-color:var(--bar);
+    margin:10px;
+    border-radius:1.5em;
+
+}
+.gösterge .sayaç{
+    font-size: xx-large ;
+}
+
+
+.oyun{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.oyun .bölümdiv {
+    background-color: var(--beyaz);
+    margin: 1em;
+    min-height: 30em;
+    min-width: 48%;
+    border-radius: 1.5em;
+    text-align: center;
+}
+.butonlar{
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 1.5em;
+    margin-bottom: 10px ;    
+    margin-top: 10px ;    
+}
+.butonlar:hover{
+    width: 120px;
+    height: 120px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 0 ;  
+    MARGIN-TOP: 0 ;
+}
+.sorubölmü{
+    font-size: xx-large;
+    color: var(--yazılar);
+}
+.konteynır{
+    text-align: center;
+    background-color:var(--beyaz);
+    margin:1em;
+    border-radius: 1.5em;
+}
+.yeşilbuton{
+    height: 100px;
+    width: 100px;
+    background-color:var(--yeşil);
+    margin: 10px;
+    min-width: 100px;
+}
+.yeşilbuton:hover{
+    height: 100px;
+    width: 100px;
+    background-color:var(--parlakyeşil);
+    margin: 10px;
+    min-width: 100px;
+}
+.kırmızıbuton{
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    background-color:var(--kırmızı);
+    margin: 10px;
+}
+.kırmızıbuton:hover{
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    background-color:var(--parlakkırmızı);
+    margin: 10px;
+}
+.sekşın{
+    display: none;
+}
+.kazanan{
+    background: var(--beyaz);
+    margin: 10px;
+    border-radius: 1.5em;
+    text-align: center;
+    display: none;
+}
+.ayarlar{
+    position:absolute;
+    height: 20px;
+    width: 20px;
+    top:0;
+    background: none;
+    border: none;
+}
+.ayarresmi{
+    height: 20px;
+    width: 20px;
+}
+.gerigel{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(219, 219, 0);
+    color: var(--beyaz);
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+.sekment{
+    display: flex;
+    justify-content: center;
+    overflow-x:auto;
+}
+video.video{
+    border-radius: 1.5em;
+    margin-top: 1em;
+}
+.fraction {
+  display: inline-block;
+  text-align: center;
+}
+.fraction sup {
+  display: block;
+  color:var(--yazılar);
+}
+.fraction sub {
+  display: block;
+  color:var(--yazılar);
+  border-top: 1px solid var(--yazılar);
+}
+.kesircvp {
+  display: inline-block;
+  text-align: center;
+}
+.kesircvp sup {
+  display: block;
+}
+.kesircvp sub {
+  display: block;
+  border-top: 1px solid 
+}

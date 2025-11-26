@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>terry math</title>
+        <link rel="icon" href="görseller/dort-islem.ico" >
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="terry math türk geliştirici oğuz ata özdemir , nesibe aydın okulları ile desteklenmiş matematiği pekiştiren 
+        ilkokul ortaokul ve lise seviyeleri bulunan tübatağa katılmış bir oyunlaştırılmış bir uygulamadır">
+        <meta keywords="matematik ,oyunlaştırılmış, tübitak projesi ,terry tao ,eğlenceli matematik ,seviyeye uygun ,tam sayılar, kesirler ,denklem çözme ,çarpma ,bölme ,toplama ,çıkarma, dört işlem ,ilkokul matematik ,ortaokul matematik ,lise matematik ,matematik uygulaması">
+    </head>
+    <body>
+        <audio id = "kaybetme" class="ses">
+            <source src="sesler/kisa.mp3" type="audio/mp3">
+        </audio>
+        <audio id="kazanma" class="ses">
+            <source src="sesler/uzun.mp3" type="audio/mp3">
+        </audio>
+        <audio id="bitiş" class="ses">
+            <source src="sesler/kazan.mp3" type="audio/mp3">
+        </audio>
+        <section class="sekşın">
+            <h1 class="başlık">matso</h1>
+              <div class="zaman" data-label="zaman:"></div>
+            <div class="oyun">
+                <div class="bölümdiv"></divclass>
+                    <h3>Oyuncu 1 </h3>
+                    <h3 class="sorubölmü">sor</h3 >
+                    <button class="butonlar">1</button>
+                    <button class="butonlar">2</button>
+                    <button class="butonlar">3</button>
+                    <div class="gösterge">
+                        <h3 class="sayaç">puan:</h3>
+                        <h3 class="sayaç">seri:</h3>
+                    </div>
+                </div>
+                <div class="bölümdiv">
+                    <h3>Oyuncu 2</h3>
+                    <h3 class="sorubölmü" >sor <span class="fraction"><sup>3</sup><sub>4</sub></span></h3 > 
+                    <button class="butonlar" >1</button>
+                    <button class="butonlar" >2</button>
+                    <button class="butonlar">3</button>   
+                    <div class="gösterge">
+                        <h3 class="sayaç">puan:</h3>
+                        <h3 class="sayaç">seri:</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header class = "anasayfa">
+            <div class="konteynır">
+                <h3>terry math</h3>
+                
+                <h2>ilkokul</h2>
+                <div class="sekment">
+                    <button class="yeşilbuton">toplama <br>(2 basamaklı)</button>
+                    <button class="kırmızıbuton">4 işlem<br>(2 basamaklı)</button>
+                </div>
+                <h2>ortaokul</h2>
+                <div class="sekment">
+                    <button class="yeşilbuton">toplama <br>(tam sayıları)</button>
+                    <button class="kırmızıbuton">4 işlem<br>(tam sayılar)</button>
+                    
+                </div>
+                <h2>lise (yakında gelecek)</h2>
+                <div class="sekment">
+                    <button class="yeşilbuton">gelecek<br>siteyi önerin!</button>
+                    <button class="kırmızıbuton">gelecek<br>yapımcı:oğuz Ata</button>
+                </div>
+            </div>
+        </header>
+        <section class="kazanan">
+            <div class="yazılar">
+                <h4>Kazanan:</h4>
+            <h1 class="söyleleş">A</h1>
+            </div>
+            <div class="gorseller">
+                 <img src="görseller/terry mat.mp4" alt="kupa">
+            </div>
+            <button class="gerigel">geri dön</button>
+        </section>
+        <section>
+            <div class="konteynır">
+                <h3>terry math</h3>
+                <h4 for="video">bizim oynayışımız </h4>
+                <video class="video"src="görseller/terry mat.mp4" controls></video><br>   
+                <p>
+                    ben oğuz ata özdemir , ve uygulamayı test eden arkadaşlarım kadir ve videoda da olan, kerem ile geliştirdiğimiz bu 
+                    ilk matematik hocam ile iddaya girdim ve "ben bu uygulamayı yaparım ve geliştiririm" dedim ve başladım bunu yapmaya.
+                    yani işin komik yanı bunu ben sadece iddada bir gofret için yaptım 0_0. ama bu uygulama gizem hoca-bilişim hocam-
+                    görünce bunu tübitağa sokalım dedi ve cengiz abimin yanında bu uygulamayı yayınladım.yeni müfredata göre de geliştireceğim
+                </p>
+                <label for="sesayarı">ses:0</label>
+                <input type="range" name="sesayarı" id="sesayarı"  min="1" max="100">
+                <label for="sesayarı">100</label><br>
+                <button class="dark"> dark mode</button>
+            </div>
+        </section>
+        <script>
+            let gerigel = document.querySelector(".gerigel");
+            gerigel.addEventListener("click", ()=>{
+                document.querySelector(".kazanan").style.display = "none";
+                document.querySelector(".anasayfa").style.display = "block";
+            });
+        </script>
+        <script src="zorortaokul.js"></script> 
+        <script src="kolayort.js"></script> 
+        <script src="ayarlar.js"></script>
+    </body>
+</html> 
